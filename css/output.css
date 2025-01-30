@@ -886,3 +886,178 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+body{
+  font-family: "Anton", serif;
+}
+
+button{
+  font-family: "Anton", serif;
+}
+/* Boton llenar */
+.llenar{
+  --color: #9c3a37;
+  --hover: #e71c0e;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.8rem;
+  transition: 0.2s;
+
+}
+
+.llenar:hover,
+.llenar:focus{
+  box-shadow: inset 0 0 0 2.5rem var(--hover);
+  border-color: var(--hover);
+  color: #000;
+
+}
+
+/* Boton pulso */
+.pulso{
+  --color: #62e747;
+  --hover: #09a111;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.pulso:hover,
+.pulso:focus{
+  box-shadow: 0 0 0 2.5rem transparent;
+  border-color: var(--color);
+  animation: pulse 1s;
+
+}
+
+@keyframes pulse {
+  0%{box-shadow: 0 0 0 0 var(--hover)};
+  
+}
+
+/* Boton cerrar */
+.cerrar{
+  --color: #452647;
+  --hover: #e2b2e7;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.cerrar:hover,
+.cerrar:focus{
+  box-shadow: inset -4.5rem 0 0 0 var(--hover),
+  inset 4.5rem 0 0 0 var(--hover);
+  color:#fff;
+  border-color: var(--color);
+}
+
+/* Boton levantar */
+.levantar{
+  --color: #e9126b;
+  --hover: #e99ab8;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.levantar:hover,
+.levantar:focus{
+  box-shadow: 0 0.5rem -0.4rem var(--hover);
+  transform: translateY(-3rem);
+  border-color: var(--hover);
+  color: var(--hover);
+  
+}
+
+/* Boton subir */
+.subir{
+  --color: #f8f409;
+  --hover: #d1ce2d;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.subir:hover,
+.subir:focus{
+  box-shadow: inset 0 -5rem 0 0 var(--hover);
+  border-color: var(--hover);
+  color:#000;
+  
+}
+
+/* Boton deslizar */
+.deslizar{
+  --color: #ff440b;
+  --hover: #c95b02;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.deslizar:hover,
+.deslizar:focus{
+  box-shadow: inset 10rem 0 0 0 var(--hover);
+  border-color: var(--hover);
+  color:#ffffff;
+  
+}
+
+/* Boton rarrec*/
+.rarrec{
+  --color: #820d8d;
+  --hover: #e2b2e7;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+.rarrec:hover,
+.rarrec:focus{
+  box-shadow: inset 0 -2.5rem 0 0 var(--hover),
+  inset 0 2.5rem 0 0 var(--hover);
+  color:#000000;
+  border-color: var(--color);
+}
+
+
+/* Boton desplazar */
+.desplazar{
+  --color: #4d5566d7;
+  --hover: #858799;
+  color: var(--color);
+  background: none;
+  border: 2px solid;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+  box-shadow: 0.3rem 0.3rem 0 0 var(--hover),
+  inset 0.3rem 0 0 var(--hover);
+}
+.desplazar:hover,
+.desplazar:focus{
+  box-shadow: 0 0 0 0 var(--hover), 
+  inset 6rem 4.5rem 0 0 var(--hover);
+  border-color: var(--hover);
+  color:var(--color);
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
